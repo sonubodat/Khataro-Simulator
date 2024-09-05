@@ -1,5 +1,5 @@
 .profile-section {
-    background-image: url('3.webp'); /* Add your background image path */
+    background-color: #494949; /* Add your background image path */
     background-size: cover;
     background-position: center;
     color: white; /* Ensure text is readable */
@@ -10,7 +10,7 @@
   }
   
   .profile-button {
-    background-color: #007bff;
+    background-color: brown;
     color: white;
     border: none;
     padding: 10px 20px;

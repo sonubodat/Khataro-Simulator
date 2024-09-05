@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    background-color:#282c34;; /* Slightly darker background for contrast */
+    background-color:#333;; /* Slightly darker background for contrast */
 }
 
 .info-box {
@@ -51,25 +51,27 @@
     color: white;
     transition: background-color 0.3s ease; /* Smooth transition for hover */
 }
-
 .quote-button {
-    background-color: #FF9800;
+    background-color: brown;
+    transition: background-color 0.3s ease;
 }
 
 .quote-button:hover {
-    background-color: #e68900;
+    background-color: brown;
 }
 
 .learn-more-button {
-    background-color: #2196F3;
+    background-color: brown;
+    transition: background-color 0.3s ease;
 }
 
 .learn-more-button:hover {
-    background-color: #1e7ad6;
+    background-color: brown;
 }
 
 .login-button {
-    background-color: #4CAF50;
+    background-color: brown;
+    transition: background-color 0.3s ease;
 }
 
 .login-button:hover {
@@ -78,26 +80,33 @@
 
 .extended-description {
     margin-top: 10px;
-    background-color: #f9f9f9;
+    background-color: #494949;
     padding: 10px;
     border-left: 5px solid #4CAF50; /* Green highlight */
+    transition: background-color 0.3s ease, padding 0.3s ease;
 }
+
+.extended-description:hover {
+    background-color: #5a5a5a; /* Slightly lighter gray on hover */
+    padding: 15px; /* Increase padding on hover */
+}
+
 
 /* Individual background images for each box */
 .info-box:nth-child(1) {
-    background-image: url('5.jpg');
+    background-color: #494949;
 }
 
 .info-box:nth-child(2) {
-    background-image: url('2.png');
+    background-color: #494949;
 }
 
 .info-box:nth-child(3) {
-    background-image: url('3.webp');
+    background-color: #494949;
 }
 
 .info-box:nth-child(4) {
-    background-image: url('5.jpg');
+    background-color: #494949;
 }
 
 @media (max-width: 768px) {

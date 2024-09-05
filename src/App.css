@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -81,7 +81,7 @@ button {
 
 header {
   width: 100%;
-  background-color: rgba(40, 44, 52, 0.8); /* Semi-transparent background */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
   padding: 3px;
   color: white;
   z-index: 1000; /* Ensures it stays on top of other elements */
@@ -115,21 +115,36 @@ nav a:hover {
 }
 
 .overlay {
+  text-size-adjust: 150;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  background: rgba(0, 0, 0, 0); /* Semi-transparent overlay */
+  background: rgba(255, 255, 255, 0); /* Semi-transparent overlay */
   padding: 20px;
   border-radius: 10px;
   font-size: larger;
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s ease-out 1s forwards; /* Delay and fade-in */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -55%); /* Start slightly off-center for a subtle "movie-like" effect */
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* Final position */
+  }
 }
 
 .content-container {
   padding: 20px;
-  background-color: #282c34;
+  background-color: #333;
   color: white;
   min-height: 100vh; /* At least full viewport height */
   overflow-y: auto;

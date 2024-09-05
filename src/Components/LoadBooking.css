@@ -10,7 +10,7 @@
 
 aside.sidebar1 {
   width: 300px;
-  background-image: url('4.jpg'); 
+  background-color: brown; 
   background-size: cover;
   background-position: center;
   color: white;
@@ -29,11 +29,11 @@ aside.sidebar1 {
 }
 
 .bgimage {
-  background-image: url('3.webp'); /* Add your background image path */
-  background-size: cover;
-  background-position: center;
-  color: white;
+  background-image: url('5.avif'); 
+  background-size: fill;
+  background-position: 0px;
+  color: black;
   padding: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 20px; /* Smoother corners for the background image container */
+  border-radius: 20px; 
 }

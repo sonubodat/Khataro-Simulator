@@ -20,7 +20,7 @@ function App() {
           Your browser does not support the video tag.
         </video>
         <div className="overlay">
-          <h2> Welcome</h2>
+        <h1>Khataro Simulator</h1>
         </div>
       </div>
 
