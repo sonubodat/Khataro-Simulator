@@ -1,0 +1,47 @@
+/* InfoBoxes.css */
+#info-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.info-box {
+    flex: 1;
+    padding: 20px;
+    border: 3px solid #4CAF50;
+    border-radius: 8px;
+    background-color: white;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+.quote-button, .learn-more-button, .login-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.quote-button {
+    background-color: #FF9800;
+}
+
+.learn-more-button {
+    background-color: #2196F3;
+}
+
+.login-button {
+    background-color: #4CAF50;
+}
+.extended-description {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 5px solid #4CAF50; /* Green highlight */
+  }
+  

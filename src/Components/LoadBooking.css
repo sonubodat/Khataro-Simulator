@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+  }
+  
+  #book-load {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  aside.sidebar1 {
+    width: 300px;
+    background-image: url('4.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  .sidebar-content h3 {
+    margin-top: 0;
+  }
+  
+  .sidebar-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .bgimage{
+    background-image: url('3.webp'); /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }

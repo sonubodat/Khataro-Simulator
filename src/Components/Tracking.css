@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+  }
+  
+  #track-load {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .sidebar-content h3 {
+    margin-top: 0;
+  }
+  
+  .sidebar-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .status {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .container {
+    display: flex;
+  }
+  
+  #track-load {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  aside.sidebar {
+    width: 300px;
+    background-image: url('5.jpg'); /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  .sidebar-content h3 {
+    margin-top: 0;
+  }
+  
+  .sidebar-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .status {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Styles for the submit button with a background image */
+  button {
+    color: bisque; /* Add your button background image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  .bggimage{
+    background-image: url('3.webp'); /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    color: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
