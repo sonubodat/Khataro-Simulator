@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Header from './Components/Header';
-import LoadBooking from './Components/LoadBooking';
-import Tracking from './Components/Tracking';
-import UserProfile from './Components/UserProfile';
-import InfoBoxes from './Components/InfoBoxes';
-import Footer from './Components/Footer';
+import Header from './Components/headers/Header';
+import LoadBooking from './Components/loadbooking/LoadBooking';
+import Tracking from './Components/tracking/Tracking';
+import UserProfile from './Components/userProfile/UserProfile';
+import InfoBoxes from './Components/infobox/InfoBoxes';
+import Footer from './Components/footers/Footer';
 import Gpslive from './Components/GPSLIVE'; // Import GPSLive component
 import Shipment from './Components/Shipment'; // Import Shipment component
 
