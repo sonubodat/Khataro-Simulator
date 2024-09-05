@@ -100,7 +100,7 @@ nav a:hover {
 
 .video-container {
   position: relative;
-  height: 100vh; /* Full viewport height */
+  height: 75vh; /* Full viewport height */
   overflow: hidden;
 }
 

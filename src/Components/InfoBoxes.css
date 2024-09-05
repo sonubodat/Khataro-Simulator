@@ -1,21 +1,45 @@
-/* InfoBoxes.css */
 #info-boxes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color:#282c34;; /* Slightly darker background for contrast */
 }
 
 .info-box {
     flex: 1;
+    margin-top: 1px;
     padding: 20px;
-    border: 3px solid #4CAF50;
-    border-radius: 8px;
-    background-color: white;
+    border-radius: 12px; /* Smooth rounded corners */
+    background-color:slategray;
     min-width: 250px;
+    max-width: 350px; /* Optional: Limit width for better layout on larger screens */
     box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth animation on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative; /* For layered text over image */
+    overflow: hidden; /* Ensure image fits inside */
+}
+
+.info-box:hover {
+    transform: translateY(-10px); /* Lift the box slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.info-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Text shadow for better readability */
+}
+
+.info-box p {
+    font-size: 1em;
+    line-height: 1.5;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Apply shadow to text */
 }
 
 .quote-button, .learn-more-button, .login-button {
@@ -25,23 +49,61 @@
     border-radius: 5px;
     cursor: pointer;
     color: white;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
 }
 
 .quote-button {
     background-color: #FF9800;
 }
 
+.quote-button:hover {
+    background-color: #e68900;
+}
+
 .learn-more-button {
     background-color: #2196F3;
+}
+
+.learn-more-button:hover {
+    background-color: #1e7ad6;
 }
 
 .login-button {
     background-color: #4CAF50;
 }
+
+.login-button:hover {
+    background-color: #43a047;
+}
+
 .extended-description {
     margin-top: 10px;
     background-color: #f9f9f9;
     padding: 10px;
     border-left: 5px solid #4CAF50; /* Green highlight */
-  }
-  
+}
+
+/* Individual background images for each box */
+.info-box:nth-child(1) {
+    background-image: url('5.jpg');
+}
+
+.info-box:nth-child(2) {
+    background-image: url('2.png');
+}
+
+.info-box:nth-child(3) {
+    background-image: url('3.webp');
+}
+
+.info-box:nth-child(4) {
+    background-image: url('5.jpg');
+}
+
+@media (max-width: 768px) {
+    .info-box {
+        flex: 1 1 100%; /* Make each box take up full width on smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
